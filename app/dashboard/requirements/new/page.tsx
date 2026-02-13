@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-interface RequirementsNewItem {
+interface RequirementsNewItem
   id: string;
   title?: string;
   status?: string;
@@ -10,7 +10,7 @@ interface RequirementsNewItem {
   [key: string]: any;
 }
 
-export default function RequirementsNewPage {
+export default function RequirementsNewPage
   const [items, setItems] = useState<RequirementsNewItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [showCreate, setShowCreate] = useState(false);
@@ -39,7 +39,7 @@ export default function RequirementsNewPage {
   };
 
   const handleDelete = async (id: string) => {
-    await fetch(`/api/requirements/new/${id}`, { method: 'DELETE' });
+    await fetch(`/ApiRequirementsNew/${id}`, { method: 'DELETE' });
     setItems(prev => prev.filter(i => i.id !== id));
   };
 
