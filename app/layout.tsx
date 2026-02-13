@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'ComplianceOS - AI regulatory requirement tracker for small business tax and compliance',
-  description: 'Value Proposition: Automatically tracks changing regulatory requirements and tax obligations for small businesses. Reduces compliance errors by 60% and saves 10+ hours/month on regulatory research for business owners and accountants.',
+  description: 'Value Proposition: Automatically tracks changing regulatory requirements and tax obligations for sma',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
